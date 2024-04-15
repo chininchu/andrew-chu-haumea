@@ -1,0 +1,56 @@
+body {
+    background-color: #f8f8f8; /* Soft light gray background */
+    color: #333; /* Dark, near-black text */
+    margin: 0; /* Helps reset default browser margins or padding */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+
+section {
+    /*margin-bottom: 30px; !* Spacing between sections *!*/
+    padding: 20px; /* Adds space within sections */
+    margin: 100%;
+}
+
+.experience-content { /* A class to style the Experience section */
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 2em; /* Slightly larger headings */
+    font-weight: bold;
+    color: #0066cc; /*  A shade of blue for headings */
+}
+
+h1 {
+    font-size: 3em; /* Even larger for your name */
+    text-decoration: underline;
+}
+
+.experience-item {
+    background-color: #eee; /* Light background for experience blocks */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.connect-links a {
+    color: #0066cc; /* Same blue from headings */
+    text-decoration: none; /* Remove default underline */
+    display: block; /* Make each link take up full line */
+    padding: 10px 0; /* Space above/below links */
+}
+
+
+img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Keeps aspect ratio automatically */
+    border-radius: 50%; /* Circular image (optional) */
+    display: block; /* Places the image on its own line */
+    margin: 0 auto; /* Centers the image horizontally  */
+}
