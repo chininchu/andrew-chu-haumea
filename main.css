@@ -17,7 +17,11 @@ section {
 }
 
 .experience-content { /* A class to style the Experience section */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+
 }
 
 h1, h2 {
@@ -32,17 +36,23 @@ h1 {
 }
 
 .experience-item {
+    flex: 1 0 30%;
+
+    margin: 10px;
     background-color: #eee; /* Light background for experience blocks */
     padding: 20px;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px*/
     border-radius: 8px; /* Slightly rounded corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
 .connect-links a {
+
+    display: flex;
+    justify-content: space-around;
     color: #0066cc; /* Same blue from headings */
     text-decoration: none; /* Remove default underline */
-    display: block; /* Make each link take up full line */
+    /*display: block; !* Make each link take up full line *!*/
     padding: 10px 0; /* Space above/below links */
 }
 
@@ -54,3 +64,59 @@ img {
     display: block; /* Places the image on its own line */
     margin: 0 auto; /* Centers the image horizontally  */
 }
+
+.profile-header {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center the text */
+}
+
+.connect-heading {
+    text-align: center;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 50%;
+    /*grid-gap: 50px;*/
+
+
+}
+
+
+/*
+Mobile device
+*/
+
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px; /* Slightly smaller text on mobile */
+    }
+
+    h1, h2 {
+        font-size: 1.8em; /* Reduce heading size a bit */
+    }
+
+    .experience-content {
+        flex-direction: column; /* Stack experience items vertically */
+    }
+
+    .experience-item {
+        flex: 1 0 100%; /* Force items to take up full width */
+        margin: 10px 0; /* Adjust vertical margins */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Make grid one column on mobile */
+        grid-gap: 20px; /* Reduce grid-gap on mobile */
+    }
+
+
+}
+
+
